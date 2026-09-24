@@ -251,7 +251,7 @@ All metrics were evaluated on the independent holdout test set (1,126 customers;
 
 ## Author
 
-- **Student Name:** [Your Name]
+- **Student Name:** Mehek Aggarwal
 - **Academic Program:** IBM SkillsBuild Data Analytics with AI Academic Internship
 - **Conducting Organization:** BharatCares in association with AICTE
 - **Submission Date:** September 2026
