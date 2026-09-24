@@ -1,0 +1,339 @@
+{
+    "results": {
+        "Logistic Regression": {
+            "accuracy": 0.7922,
+            "precision": 0.4399,
+            "recall": 0.8474,
+            "f1_score": 0.5791,
+            "roc_auc": 0.8851,
+            "confusion_matrix": [
+                [
+                    731,
+                    205
+                ],
+                [
+                    29,
+                    161
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9618421052631579,
+                    "recall": 0.780982905982906,
+                    "f1-score": 0.8620283018867925,
+                    "support": 936.0
+                },
+                "1": {
+                    "precision": 0.43989071038251365,
+                    "recall": 0.8473684210526315,
+                    "f1-score": 0.579136690647482,
+                    "support": 190.0
+                },
+                "accuracy": 0.7921847246891652,
+                "macro avg": {
+                    "precision": 0.7008664078228358,
+                    "recall": 0.8141756635177688,
+                    "f1-score": 0.7205824962671372,
+                    "support": 1126.0
+                },
+                "weighted avg": {
+                    "precision": 0.8737686016864951,
+                    "recall": 0.7921847246891652,
+                    "f1-score": 0.8142934829387738,
+                    "support": 1126.0
+                }
+            }
+        },
+        "Random Forest Classifier": {
+            "accuracy": 0.9698,
+            "precision": 0.8545,
+            "recall": 0.9895,
+            "f1_score": 0.9171,
+            "roc_auc": 0.9971,
+            "confusion_matrix": [
+                [
+                    904,
+                    32
+                ],
+                [
+                    2,
+                    188
+                ]
+            ],
+            "classification_report": {
+                "0": {
+                    "precision": 0.9977924944812362,
+                    "recall": 0.9658119658119658,
+                    "f1-score": 0.9815418023887079,
+                    "support": 936.0
+                },
+                "1": {
+                    "precision": 0.8545454545454545,
+                    "recall": 0.9894736842105263,
+                    "f1-score": 0.9170731707317074,
+                    "support": 190.0
+                },
+                "accuracy": 0.9698046181172292,
+                "macro avg": {
+                    "precision": 0.9261689745133453,
+                    "recall": 0.9776428250112461,
+                    "f1-score": 0.9493074865602076,
+                    "support": 1126.0
+                },
+                "weighted avg": {
+                    "precision": 0.9736211467123209,
+                    "recall": 0.9698046181172292,
+                    "f1-score": 0.9706634364785569,
+                    "support": 1126.0
+                }
+            }
+        },
+        "TopPositiveRiskFactors_LR": [
+            {
+                "Feature": "PreferedOrderCat_Others",
+                "Coefficient": 2.281560697865908,
+                "OddsRatio": 9.791950766887192
+            },
+            {
+                "Feature": "Complain",
+                "Coefficient": 0.720553070339278,
+                "OddsRatio": 2.0555697709866583
+            },
+            {
+                "Feature": "NumberOfAddress",
+                "Coefficient": 0.5969726301090399,
+                "OddsRatio": 1.816610914207484
+            },
+            {
+                "Feature": "MaritalStatus_Single",
+                "Coefficient": 0.5339841938568012,
+                "OddsRatio": 1.7057146864679102
+            },
+            {
+                "Feature": "PreferredPaymentMode_Cash on Delivery",
+                "Coefficient": 0.46041309265691055,
+                "OddsRatio": 1.5847284895018816
+            }
+        ],
+        "TopProtectiveFactors_LR": [
+            {
+                "Feature": "DaySinceLastOrder",
+                "Coefficient": -0.4152524764876356,
+                "OddsRatio": 0.6601735813549849
+            },
+            {
+                "Feature": "PreferedOrderCat_Mobile Phone",
+                "Coefficient": -0.9666657875130126,
+                "OddsRatio": 0.3803490909744047
+            },
+            {
+                "Feature": "CashbackAmount",
+                "Coefficient": -0.9771487871473328,
+                "OddsRatio": 0.3763827176608853
+            },
+            {
+                "Feature": "Tenure",
+                "Coefficient": -1.520761107801401,
+                "OddsRatio": 0.2185454869609948
+            },
+            {
+                "Feature": "PreferedOrderCat_Laptop & Accessory",
+                "Coefficient": -1.8762771576143131,
+                "OddsRatio": 0.15315923339916562
+            }
+        ],
+        "Top15_FeatureImportance_RF": [
+            {
+                "Feature": "Tenure",
+                "Importance": 0.27174904377018544
+            },
+            {
+                "Feature": "CashbackAmount",
+                "Importance": 0.08905548793346259
+            },
+            {
+                "Feature": "Complain",
+                "Importance": 0.07031958879702253
+            },
+            {
+                "Feature": "WarehouseToHome",
+                "Importance": 0.057834483425585954
+            },
+            {
+                "Feature": "DaySinceLastOrder",
+                "Importance": 0.05478458384643115
+            },
+            {
+                "Feature": "NumberOfAddress",
+                "Importance": 0.04963336128554554
+            },
+            {
+                "Feature": "SatisfactionScore",
+                "Importance": 0.046904627385380405
+            },
+            {
+                "Feature": "OrderAmountHikeFromlastYear",
+                "Importance": 0.045058425886911814
+            },
+            {
+                "Feature": "PreferedOrderCat_Mobile Phone",
+                "Importance": 0.03301830745605033
+            },
+            {
+                "Feature": "CityTier",
+                "Importance": 0.027540432033352644
+            },
+            {
+                "Feature": "NumberOfDeviceRegistered",
+                "Importance": 0.027262981477647934
+            },
+            {
+                "Feature": "OrderCount",
+                "Importance": 0.026007131837507493
+            },
+            {
+                "Feature": "MaritalStatus_Single",
+                "Importance": 0.022871566083841676
+            },
+            {
+                "Feature": "CouponUsed",
+                "Importance": 0.021692495926670448
+            },
+            {
+                "Feature": "PreferedOrderCat_Laptop & Accessory",
+                "Importance": 0.01701775695493751
+            }
+        ]
+    },
+    "num_features": [
+        "Tenure",
+        "CityTier",
+        "WarehouseToHome",
+        "HourSpendOnApp",
+        "NumberOfDeviceRegistered",
+        "SatisfactionScore",
+        "NumberOfAddress",
+        "Complain",
+        "OrderAmountHikeFromlastYear",
+        "CouponUsed",
+        "OrderCount",
+        "DaySinceLastOrder",
+        "CashbackAmount"
+    ],
+    "cat_features": [
+        "PreferredLoginDevice",
+        "PreferredPaymentMode",
+        "Gender",
+        "PreferedOrderCat",
+        "MaritalStatus"
+    ],
+    "cat_categories": {
+        "PreferredLoginDevice": [
+            "Mobile Phone",
+            "Computer"
+        ],
+        "PreferredPaymentMode": [
+            "Debit Card",
+            "UPI",
+            "Credit Card",
+            "Cash on Delivery",
+            "E wallet"
+        ],
+        "Gender": [
+            "Female",
+            "Male"
+        ],
+        "PreferedOrderCat": [
+            "Laptop & Accessory",
+            "Mobile Phone",
+            "Others",
+            "Fashion",
+            "Grocery"
+        ],
+        "MaritalStatus": [
+            "Single",
+            "Divorced",
+            "Married"
+        ]
+    },
+    "num_summary": {
+        "Tenure": {
+            "min": 0.0,
+            "max": 61.0,
+            "median": 9.0,
+            "mean": 10.189899366380917
+        },
+        "CityTier": {
+            "min": 1.0,
+            "max": 3.0,
+            "median": 1.0,
+            "mean": 1.6547069271758437
+        },
+        "WarehouseToHome": {
+            "min": 5.0,
+            "max": 127.0,
+            "median": 14.0,
+            "mean": 15.639895891429633
+        },
+        "HourSpendOnApp": {
+            "min": 0.0,
+            "max": 5.0,
+            "median": 3.0,
+            "mean": 2.9315348837209303
+        },
+        "NumberOfDeviceRegistered": {
+            "min": 1.0,
+            "max": 6.0,
+            "median": 4.0,
+            "mean": 3.68898756660746
+        },
+        "SatisfactionScore": {
+            "min": 1.0,
+            "max": 5.0,
+            "median": 3.0,
+            "mean": 3.066785079928952
+        },
+        "NumberOfAddress": {
+            "min": 1.0,
+            "max": 22.0,
+            "median": 3.0,
+            "mean": 4.214031971580817
+        },
+        "Complain": {
+            "min": 0.0,
+            "max": 1.0,
+            "median": 0.0,
+            "mean": 0.2849023090586146
+        },
+        "OrderAmountHikeFromlastYear": {
+            "min": 11.0,
+            "max": 26.0,
+            "median": 15.0,
+            "mean": 15.707921714818266
+        },
+        "CouponUsed": {
+            "min": 0.0,
+            "max": 16.0,
+            "median": 1.0,
+            "mean": 1.7510234462225531
+        },
+        "OrderCount": {
+            "min": 1.0,
+            "max": 16.0,
+            "median": 2.0,
+            "mean": 3.0080044676098288
+        },
+        "DaySinceLastOrder": {
+            "min": 0.0,
+            "max": 46.0,
+            "median": 3.0,
+            "mean": 4.543490512868683
+        },
+        "CashbackAmount": {
+            "min": 0.0,
+            "max": 324.99,
+            "median": 163.28,
+            "mean": 177.22303019538188
+        }
+    }
+}
